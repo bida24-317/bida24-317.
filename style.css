@@ -228,4 +228,81 @@ footer {
     opacity: 1;
   }
 }
+/* Basic Reset */
+body, h1, h2, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f1;
+  color: #333;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Navigation Styling */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
+  background-color: #ffb997;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #4b2e2e;
+  transform: scale(1.1);
+}
+
+nav a.active {
+  color: #4b2e2e;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f67e7d;
+  color: white;
+}
+
+/* Main Contact Section */
+main.contact {
+  text-align: center;
+  padding: 50px 20px;
+  animation: slideIn 1.2s ease-out;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f67e7d;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
 
