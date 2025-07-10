@@ -375,4 +375,118 @@ form button:hover {
     transform: translateY(0);
   }
 }
+/* ====== GALLERY PAGE STYLING ====== */
+
+main.gallery {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.gallery h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  animation: zoomIn 0.8s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    tra
+/* ====== ABOUT PAGE STYLING ====== */
+
+main.about {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  animation: slideLeftFade 1.2s ease;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f67e7d;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  padding: 0 10px;
+}
+
+/* ====== ANIMATION ====== */
+@keyframes slideLeftFade {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ====== HOMEPAGE STYLING ====== */
+
+/* Hero Section */
+main.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background-color: #fff8f1;
+  animation: fadeScale 1.2s ease-out;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f67e7d;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Products Section */
+section.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px 20px 60px;
+  background-color: #fff3e6;
+  text-align: center;
+}
+
+.product {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba
 
