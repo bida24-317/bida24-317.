@@ -796,3 +796,19 @@ footer {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+/* Make images responsive and limit their max width */
+.gallery-grid img,
+.product img {
+  max-width: 250px;   /* limits the image width to 250px */
+  width: 100%;       /* makes image scale down if container is smaller */
+  height: auto;      /* keeps aspect ratio */
+  border-radius: 10px; /* rounded corners for style */
+  object-fit: cover; /* makes sure images fill the box nicely */
+  transition: transform 0.3s ease;
+}
+
+/* Optional: hover effect to slightly zoom images */
+.gallery-grid img:hover,
+.product img:hover {
+  transform: scale(1.05);
+}
