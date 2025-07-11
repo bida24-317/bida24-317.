@@ -812,3 +812,11 @@ footer {
 .product img:hover {
   transform: scale(1.05);
 }
+/* Target images on homepage products */
+main.hero img,
+section.products img {
+  max-width: 300px;  /* limits width to 300px */
+  width: 100%;       /* makes images responsive */
+  height: auto;      /* keeps aspect ratio */
+  border-radius: 10px; /* optional, rounds corners */
+}
